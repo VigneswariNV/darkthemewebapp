@@ -1,0 +1,128 @@
+.light-theme{
+    background-color:$white;
+    color:black;
+    box-sizing:border-box;
+    overflow:hidden;
+    font-family:$primary-font;
+
+
+    .secondary-button{
+        background-color:$blue;
+        color:white;
+    }
+    .list-color{
+        color:#292828;
+    }
+    .sidenav{
+        background-color:#e9e7e7;
+        font-family:$primary-font;
+        div{
+            @include border(1px,solid,#b4b2b2);
+        }
+    }
+    a,.arrow-btn,span{
+        color:#292828;
+        font-family:$primary-font;
+    }
+    .element,.sub-element,.button,.lang-content,.lang-button,.header{
+       
+        background-color:#e9e7e7;
+    }
+    .toggle__fill,.arrow-btn
+    {
+        @include borderline(1px,solid,#b4b2b2);
+    }
+ 
+    .border,header{
+        @include border(1px,solid,#b4b2b2);
+       }
+    .dropdown-btn:focus{
+        background-color:#c7c2c2;
+        border-left:2px solid $blue;
+        p{
+            text-decoration: underline;
+        }
+    }
+    .dropdown-btn:focus svg{
+        fill:$blue;
+    }
+    .arrow{
+        border-color: black;
+        border-style:solid;
+    }
+    svg{
+        fill:#292828;
+    }
+    .down-btn{
+        border-top:5px solid black;
+    }
+    
+}
+
+.dark-theme {
+    background-color: $black;
+    color:white;
+    box-sizing:border-box;
+    overflow:hidden;
+    font-family:$primary-font;
+
+    .secondary-button,.button{
+        background-color: $white-opa;
+        color:$white;
+    }
+    .list-color{
+        color:$link-white;
+    }
+    .sidenav{
+    background-color: rgba(156, 165, 236, 0.04);
+    div{
+        @include border(1px,solid,$border-white);
+    }
+    }
+    .element,.sub-element,.lang-content,.lang-button{
+       background-color: $card;
+    }
+    .toggle__fill,.arrow-btn
+    {
+        @include borderline(1px,solid,$border-white);
+    }
+    .border,header{
+        @include border(1px,solid,$border-white);
+       }
+    a,.arrow-btn,.drop-btn,span{
+        color:white;
+        font-family:$primary-font;
+    }
+    .dropdown-btn:focus{
+        background-color:$card;
+        border-left:2px solid $blue;
+
+        p{
+            text-decoration: underline;
+        }
+    }
+    .dropdown-btn:focus svg{
+        fill:$blue;
+    }
+    .arrow{
+        border-color: white;
+        border-style:solid;
+    }
+    svg{
+        fill:white;
+    }
+    .down-btn{
+        border-top:5px solid white;
+    }
+    .header{
+        background-color: rgba(156, 165, 236, 0.04);
+    }
+   
+  
+}
+
+/*  @function set-color($color){
+    @if(lightness($color)>70){
+        return 
+    }
+}  */

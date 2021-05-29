@@ -1,0 +1,36 @@
+.sidenav{
+   //@include width(280px);
+   flex:2;
+   height:855px;
+   position:relative;
+    .sidebar{
+        padding:30px 0 20px 0;
+        height:220px;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+        ul{
+            
+            li{
+                    margin-top:15px;
+ 
+                    p{
+                        line-height:0.71;
+                        padding-top:5px;
+                        padding-left:40px;
+                    }
+                    nav{
+                        margin-top:20px;
+                        margin-bottom:25px;
+                    }
+            }
+        }
+    }
+    .section{
+       padding:20px 0 20px 20px;
+        span{
+            padding-left:16px;
+        }
+    }
+}

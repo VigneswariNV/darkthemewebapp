@@ -1,0 +1,48 @@
+.sub-content{
+    padding-left: 55px;
+
+.sub-wrapper{
+    overflow:hidden;
+    width:100%;
+    position: relative;
+    height:240px;
+}
+    .sub-slide{
+        margin-top:50px;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease;
+        display:flex;
+    }
+    .sub-element{
+        @include width(255px);
+        margin-top:20px;
+        margin-right:10px;
+        
+        .sub-img{
+            margin-top:-30px;
+            margin-right:20px;
+        }
+        .sub-division{
+            padding:10px 10px 15px 15px;
+            position:relative;
+            a{
+                padding: 4px 8px;
+            }
+            button{
+                padding: 10px  15px;
+                margin-left:10px;
+               }
+            .inner-div{
+                @include width(140px);
+            }
+            p{
+                margin-top:10px;
+            }
+            span{
+                margin-right:10px;
+                margin-left:10px;
+            }
+        }
+    }
+}

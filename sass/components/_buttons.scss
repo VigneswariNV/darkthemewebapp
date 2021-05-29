@@ -1,0 +1,74 @@
+.button{
+    border:none;
+    margin-left:5px;
+}
+.primary-button{
+    background-image: $button-background;
+    color:$white;
+    @include radius(4px);
+    box-shadow: 0 0 12px 0 rgba(111, 110, 255, 0.5);
+}
+.secondary-button{
+    padding: 4px 8px;
+    @include radius(3px);
+}
+.profile-button{
+    padding: 3px 8px 3px 3px;
+    @include radius(5px);
+    background-color:$button-white;
+    margin-right:10px;
+}
+
+.arrow-btn{
+    padding: 8px 12px ;
+    background-color:inherit;
+    @include radius(4px);
+    margin-right:10px;
+    cursor:pointer;
+}
+.buttons{
+    margin-top:30px;
+}
+.abs-button{
+    position:absolute;
+    left:15px;
+    top:15px;
+}
+.subabs-btn{
+    position:absolute;
+    left:25px;
+    top:40px;
+}
+.dropdown-btn{
+    padding:10px 0 10px 68px;
+    width:88%;
+    background-color:inherit;
+    margin-top:5px;
+    font-family:$primary-font;
+}
+.dropdown{
+    display:inline-block;
+    position:relative;
+    width:85%;
+}
+.drop-btn{
+    padding-left:40px;
+    background-color:inherit;
+    width:100%;
+}
+.dropdown-content{
+    display:none;
+}
+button{
+    outline:none;
+    cursor:pointer;
+    border:none;
+    font-family:$primary-font;
+}
+.lang-button{
+    @include width(55px);
+    img{
+        @include w-h(14px);
+        margin-right:5px;
+    }
+}
